@@ -1,4 +1,4 @@
-# Advanced Programming [![Build Status](https://travis-ci.org/asartori86/advanced_programming-2018-19.svg?branch=master)](https://travis-ci.org/asartori86/advanced_programming-2019-20)
+# Advanced Programming [![Build Status](https://api.travis-ci.org/asartori86/advanced_programming_2019-20.svg?branch=master)](https://travis-ci.org/asartori86/advanced_programming_2019-20)
 
 [SISSA webpage](http://www.math.sissa.it/course/phd-course-master-course/advanced-programming-0)
 

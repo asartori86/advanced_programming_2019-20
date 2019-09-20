@@ -1,6 +1,6 @@
 # Advanced Programming [![Build Status](https://api.travis-ci.org/asartori86/advanced_programming_2019-20.svg?branch=master)](https://travis-ci.org/asartori86/advanced_programming_2019-20)
 
-[SISSA webpage](http://www.math.sissa.it/course/phd-course-master-course/advanced-programming-0)
+[SISSA webpage](http://www.math.sissa.it/course/phd-course-master-course/advanced-programming-1)
 
 The course aims to provide advanced knowledge of both theoretical and practical programming in C++11 and Python3, with particular regard to the principles of object-oriented programming and best practices of software development.
 

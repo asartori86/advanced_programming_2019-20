@@ -1,9 +1,8 @@
 #include <iostream>
-#include <utility>  //std::swap
 
 void buggy_swap(int a, int b);
-void swap_c(int* a, int* b);
-void swap_cxx(int& a, int& b);
+void swap_c(int *a, int *b);
+void swap_cxx(int &a, int &b);
 
 int main() {
   int a = 3;
@@ -20,11 +19,6 @@ int main() {
   b = 7;
   swap_cxx(a, b);
   std::cout << "cxx:\texpected 7 3 --> " << a << " " << b << "\n";
-
-  a = 3;
-  b = 7;
-  std::swap(a, b);
-  std::cout << "stl:\texpected 7 3 --> " << a << " " << b << "\n";
 }
 
 void buggy_swap(int a, int b) {
@@ -33,13 +27,13 @@ void buggy_swap(int a, int b) {
   a = tmp;
 }
 
-void swap_c(int* a, int* b) {
+void swap_c(int *a, int *b) {
   int tmp = *b;
   *b = *a;
   *a = tmp;
 }
 
-void swap_cxx(int& a, int& b) {
+void swap_cxx(int &a, int &b) {
   int tmp = b;
   b = a;
   a = tmp;

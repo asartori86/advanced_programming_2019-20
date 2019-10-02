@@ -39,7 +39,7 @@ Syllabus:
   - take a look at [software carpentry lecture](http://swcarpentry.github.io/git-novice/) and [pro git book](https://git-scm.com/book/en/v2) 
 - `N > 0`
   - open a terminal
-  - `cd` to the folder `advanced-programming`
+  - `cd` to the folder `advanced-programming_2019-20`
   - `git pull --rebase origin master`
 - if(conflict)
   - ask

@@ -26,7 +26,7 @@ Syllabus:
    2013, ISBN 978-0321563842
 
 ## Locations
-- Lecture room is A-005 in the main SISSA building in via Bonomea 265.
+- Lecture room is 128-129 in the main SISSA building in via Bonomea 265.
 - On Nov 19, 2019  Dec 12, 2019 the lectures will be held in room 128-129, main SISSA building in via Bonomea 265.
 
 ## How to get the material

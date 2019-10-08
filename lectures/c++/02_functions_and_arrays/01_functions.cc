@@ -1,8 +1,3 @@
-// forward declaration
-// parameters
-// default value for parameters
-// static variables
-
 #include <iostream>
 
 unsigned int factorial(unsigned int n) {

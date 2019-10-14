@@ -75,7 +75,7 @@ Introduction to the usage of `std::array` defined in the *array*
 header, together with *the range-for loop*.
 
 PPP: chap 20.9
-CPL: chap 2.2.5 range-for loop, chap 34.2.1 array
+CPL: chap 2.2.5 and 9.5.1 range-for loop, chap 34.2.1 array
 
 
 

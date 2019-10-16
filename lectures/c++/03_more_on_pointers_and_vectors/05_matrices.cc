@@ -27,14 +27,15 @@ int main() {
     std::cout << std::endl;
   }
 
-  // int *pma = ma; 		// error
-  // int *pma[5] = ma;		// error
-  int* p = &ma[0][0];
+  // int *pma {ma}; 		// error
+  // int *pma[5] {ma};		// error
+  int* p{reinterpret_cast<int*>(ma)};
+  // int* p {&ma[0][0]};
 
   // print_ma(ma, 6, 5); 	// error
   print_ma(p, 6, 5);
 
-  int* d_ma = new int[6 * 5]{};
+  auto d_ma = new int[6 * 5]{};
 
   std::cout << std::endl;
 

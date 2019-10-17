@@ -7,7 +7,7 @@ SRC = 01_enum.cc                    \
       07_template_class.cc
 
 CXX = c++
-CXXFLAGS = -Wall -Wextra -g -std=c++11
+CXXFLAGS = -Wall -Wextra -g -std=c++14
 
 EXE = $(SRC:.cc=.x)
 
@@ -26,7 +26,7 @@ all: $(EXE)
 	$(CXX) $< -o $@ $(CXXFLAGS)
 
 format: $(SRC)
-	@clang-format -i $^ 2>/dev/null || echo "Please install clang-format to run this command"
+	@clang-format -i $^ -verbose || echo "Please install clang-format to run this command"
 
 .PHONY: format
 

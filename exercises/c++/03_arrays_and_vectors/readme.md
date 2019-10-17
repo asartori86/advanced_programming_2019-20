@@ -70,7 +70,7 @@ auto t0 = std::chrono::high_resolution_clock::now();
 ...
 auto t1 = std::chrono::high_resolution_clock::now();
 
-auto elaspsed = std::chrono::duration_cast<std::chrono::milliseconds>(t1-t0);
+auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(t1-t0);
 std::cout << "Elapsed " << elapsed.count() << " [milliseconds]" << std::endl;
 ```
 

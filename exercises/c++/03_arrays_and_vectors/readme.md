@@ -1,8 +1,5 @@
 # Exercises - session 03
 
-## Convert argv to types
-using `std::istringstream`
-
 ## Matrix transpose
 
 - Write a function that computes the transpose of a matrix. The matrix is represented by a simple `std::array<double,N>` where N is the total size of the matrix (i.e., number of rows times number of columns). The original array must be modified inside the a function `transpose`. 
@@ -15,6 +12,22 @@ using `std::istringstream`
 - Test with both square and rectangular matrices.
 - Use `std::swap` defined in header `<utility>`
 
+## Convert `argv` to types
+
+- Modify the above program such that the number of rows and columns are read from command line arguments.
+
+*Hints*:
+ - Use `std::istringstream` defined in the header `<sstream>`
+
+ ```c++
+#include <sstream>
+
+std::size_t rows;
+{
+  std::istringstream is{argv[1]};
+  is >> rows;
+}
+ ```
 
 
 ## Mean and Median

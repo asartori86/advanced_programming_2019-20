@@ -32,7 +32,7 @@ std::size_t rows;
 
 ## Mean and Median
 
-- Store the numbers contained in file `temperatures.txt` into an `std::vector<double>` and compute:
+- Store the numbers contained in file `temperatures.txt` into a `std::vector<double>` and compute:
   - the mean
   - the median
 

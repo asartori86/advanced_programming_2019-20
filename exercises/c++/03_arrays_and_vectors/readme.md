@@ -62,6 +62,27 @@ std::sort( v.begin(), v.end() );
 
 - Read the `LittleWomen.txt` and then print all the read words (without repetitions) followed by the number of repetitions of that word. Compare the time to do the same using `std::vector`, `std::map`, `std::unordered_map`. The order in which the words are printed is **not** relevant.
 
+- You can measure the elapsed time as follows:
+```c++
+#include <chrono>
+
+auto t0 = std::chrono::high_resolution_clock::now();
+...
+auto t1 = std::chrono::high_resolution_clock::now();
+
+auto elaspsed = std::chrono::duration_cast<std::chrono::milliseconds>(t1-t0);
+std::cout << "Elapsed " << elapsed.count() << " [milliseconds]" << std::endl;
+```
+
+- You can avoid to repeat `std::chrono::` if you use
+```c++
+
+using namespace std::chrono;
+
+auto t0 = high_resolution_clock::now();
+```
+
+
 ## **Optional**: Conway's Game of Life
 - Implement the [Game of Life](https://www.wikidata.org/wiki/Q244615#sitelinks-wikipedia)
 - You can take a nap as follows:

@@ -46,7 +46,7 @@ class Vector {
     std::cout << "move ctor\n";
   }
 
-  // Vector(Vector&& v) noexcept = default; // ok
+  // Vector(Vector&& v) = default; // ok
 
   // move assignment
   Vector& operator=(Vector&& v) {
@@ -56,7 +56,7 @@ class Vector {
     return *this;
   }
 
-  // Vector& operator=(Vector&& v) noexcept  = default; // ok
+  // Vector& operator=(Vector&& v) = default; // ok
 
   // end move semantics
   /////////////////////////

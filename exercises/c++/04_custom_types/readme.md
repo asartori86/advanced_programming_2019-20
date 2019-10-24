@@ -70,7 +70,7 @@ Implement the following external helper functions (i.e., they are not part of th
 - **optional** `bool is_leap(const int y);`
 
 *Hints*:
-- a year is leap if it is divisible by 4. If it is also divisible by 100 is not leap. However, it is leap if it is divisible by 400.
+- a year is a leap year if it is divisible by 4. If it is also divisible by 100 is not a leap year. However, it is a leap year if it is divisible by 400.
 - try to avoid code duplication
 
 

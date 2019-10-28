@@ -8,7 +8,7 @@
 This program highlights that a compiler is able to generate a default
 constructor, copy constructor, copy assignment, move constructor and
 move assignment, and illustrates their syntax. The function
-`std::move()` is used.
+`std::move()` is used to get a r-value reference.
 
 
 PPP: chap 18.3 copying

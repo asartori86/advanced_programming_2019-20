@@ -24,7 +24,7 @@ int main() {
   } catch (const Square_root_invalid& e) {
     std::cerr << e.message << std::endl;
     return 2;
-  } catch (const std::runtime_error& e) {
+  } catch (const std::exception& e) {
     std::cerr << e.what() << std::endl;
     return 1;
   } catch (...) {

@@ -17,7 +17,7 @@ int main() {
     double d = square_root(number);
     std::cout << "square root of " << number << " is " << d << '\n';
     return 0;
-  } catch (const std::runtime_error& e) {
+  } catch (const std::exception& e) {
     std::cerr << e.what() << '\n';
     return 1;
   } catch (...) {

@@ -171,12 +171,13 @@ namespace internal {
       internal::MessageHandler{}                                               \
       << "\n\n"                                                                \
       << "------------------------------------------------------------------"  \
-      << "---"                                                                 \
       << "\n"                                                                  \
       << "A runtime exception has been thrown\n\n"                             \
       << "       file: " << __FILE__ << '\n'                                   \
+      << "       line: " << __LINE__ << '\n'                                   \
       << "   function: " << __PRETTY_FUNCTION__ << '\n'                        \
-      << "       line: " << __LINE__ << "\n\n"
+      << "------------------------------------------------------------------"  \
+      << "\n\n"
 
 #define _AP_ERROR1(cond) _AP_ERROR2(cond, std::runtime_error)
 

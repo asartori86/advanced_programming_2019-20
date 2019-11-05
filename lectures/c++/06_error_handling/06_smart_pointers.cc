@@ -10,7 +10,7 @@ class Vector {
   Vector(const unsigned int l) : elem{new double[l]} {
     std::cout << "Vector ctor\n";
   }
-  double& operator[] (const unsigned int i) noexcept {
+  double& operator[](const unsigned int i) noexcept {
     return elem[i];
   }  // you can use smart pointers almost like raw pointers
   ~Vector() noexcept { std::cout << "~Vector\n"; }

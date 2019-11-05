@@ -5,14 +5,14 @@
 
 class Foo {
  public:
-  Foo() { std::cout << "Foo\n"; }
-  ~Foo() { std::cout << "~Foo\n"; }
+  Foo() { std::cout << "Foo" << std::endl; }
+  ~Foo() { std::cout << "~Foo" << std::endl; }
 };
 
 class Bar {
  public:
-  Bar() { std::cout << "Bar\n"; }
-  ~Bar() { std::cout << "~Bar\n"; }
+  Bar() { std::cout << "Bar" << std::endl; }
+  ~Bar() { std::cout << "~Bar" << std::endl; }
 };
 
 class Vector {
@@ -20,11 +20,11 @@ class Vector {
 
  public:
   Vector(const unsigned int l) : elem{new double[l]} {
-    std::cout << "Vector\n";
+    std::cout << "Vector" << std::endl;
   }
   ~Vector() noexcept {
     delete[] elem;
-    std::cout << "~Vector\n";
+    std::cout << "~Vector" << std::endl;
   }
 };
 
@@ -34,10 +34,10 @@ class ManyResources {
 
  public:
   ManyResources() : ptr{nullptr}, v{3} {
-    std::cout << "Manyresources\n";
+    std::cout << "Manyresources" << std::endl;
     try {
       ptr = new double[5];  // new(std::nothrow) double[5] could be better
-      AP_ERROR(false) << "Error in ManyResources ctor.\n";
+      AP_ERROR(false) << "Error in ManyResources ctor." << std::endl;
     } catch (...) {
       delete[] ptr;  // <----
       throw;
@@ -45,7 +45,7 @@ class ManyResources {
   }
 
   ~ManyResources() noexcept {
-    std::cout << "Manyresources\n";
+    std::cout << "Manyresources" << std::endl;
     delete[] ptr;  // <----
   }
 };

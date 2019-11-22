@@ -4,7 +4,9 @@
 #include <vector>
 
 template <typename T>
-// requires T
+// requires:
+// T has default ctor (called in the array of T)
+// T has copy and move assignment
 class Vector {
   std::size_t _size{};
   std::unique_ptr<T[]> elem{};
@@ -71,10 +73,9 @@ class Vector {
   // variadic templates
   template <typename... Types>  // parameter pack
   void emplace_back(Types&&... args) {
-    push_back(T{std::forward<Types>(args)...});
-    // check_and_increase_capacity();
-    // elem[_size] = T{std::forward<Types>(args)...};
-    // ++_size;
+    check_and_increase_capacity();
+    elem[_size] = T{std::forward<Types>(args)...};
+    ++_size;
   }
 };
 

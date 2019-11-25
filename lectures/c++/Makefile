@@ -5,4 +5,5 @@
 	+$(MAKE) $@ -C 04_custom_types
 	+$(MAKE) $@ -C 05_copy_move_semantics
 	+$(MAKE) $@ -C 06_error_handling
+	+$(MAKE) $@ -C 07_inheritance
 

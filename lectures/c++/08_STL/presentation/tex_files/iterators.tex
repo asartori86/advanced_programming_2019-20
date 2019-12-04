@@ -69,11 +69,11 @@
   ...
   template <typename T>
   class List<T>::Iterator{
-    typename List<T>::node current;
+    typename List<T>::node* current;
     public:
     using value_type = T;
     using difference_type = std::ptrdiff_t;
-    using iterator_type =
+    using iterator_category =
       std::forward_iterator_tag;
     using reference = value_type&;
     using pointer = value_type*;

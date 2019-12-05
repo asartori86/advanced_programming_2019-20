@@ -29,7 +29,7 @@ int main() {
     std::vector<value_type> v(n);
     std::iota(v.begin(), v.end(), value_type(-1024));
     std::random_shuffle(v.begin(), v.end());
-    for (std::size_t i = 0; i < n; ++i) 
+    for (std::size_t i = 0; i < n; ++i)
       v[i] = int{v[i]} & 255;
 
     // set_instrumented(n,v.begin(),v.end());

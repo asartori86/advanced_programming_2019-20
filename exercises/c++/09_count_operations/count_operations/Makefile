@@ -38,3 +38,4 @@ clean:
 test_count_operations.o: instrumented.hpp
 test_count_operations.x: instrumented.o
 test_time.o: timer.hpp
+instrumented.o: instrumented.hpp

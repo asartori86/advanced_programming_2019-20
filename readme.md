@@ -22,8 +22,10 @@ Syllabus:
 - Programming: Principles and Practice using C++ (Second Edition),
   Bjarne Stroustrup, Addison-Wesley 2014, ISBN 978-0-321-99278-9
 
- - The C++ Programming Language, Bjarne Stroustrup, Addison-Wesley
+- The C++ Programming Language, Bjarne Stroustrup, Addison-Wesley
    2013, ISBN 978-0321563842
+
+- Fluent Pyhton. Clear, concise, and effective programming, Luciano Ramalho, O'Reilly 2015, ISBN 978-1-491-946000-8
 
 ## Locations
 - Lecture room is 128-129 in the main SISSA building in via Bonomea 265.

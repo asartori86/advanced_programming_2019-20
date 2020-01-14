@@ -4,3 +4,4 @@
 	+$(MAKE) $@ -C 03_cpp_from_c
 	+$(MAKE) $@ -C 04_libdl
 	+$(MAKE) $@ -C 05_ctypes
+	+$(MAKE) $@ -C 06_fortran

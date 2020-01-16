@@ -1,7 +1,7 @@
 # Advanced Programming Exam
 
 The exam consists of a written project followed by an oral discussion. 
-The written project is due to February 14, 2020, at 11:59 PM.
+The written project is due to February 19, 2020, at 8:55 AM.
 Orals take place on 19th and 20th of February.
 
 - Work in groups make of two/three people.
